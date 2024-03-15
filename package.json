@@ -1,0 +1,27 @@
+{
+  "name": "gsrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nishwal bhandari",
+  "type":"commonjs",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.3",
+    "moment": "^2.29.4",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.6",
+    "playwright": "^1.38.1",
+    "puppeteer": "^21.3.8",
+    "redis": "^4.6.13",
+    "replace-in-file": "^7.0.1",
+    "replace-string": "^4.0.0",
+    "sib-api-v3-sdk": "^8.5.0",
+    "string-replace": "^0.2.0",
+    "uuid": "^9.0.1"
+  }
+}

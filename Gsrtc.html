@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GSRTC Ticket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    .bold {
+        font-weight: bold;
+    }
+    body {
+        text-align: center;
+    }
+    .container {
+        border: 3px solid lightgray;
+        display: inline-block; 
+        width: 693px;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: left; 
+    }
+    .incontainer {
+        background-color: antiquewhite;
+        padding: 10px;
+    }
+    img {
+        vertical-align: middle; 
+    }
+    #first {
+        margin-left: 1vw;
+        font-style: italic;
+        color: green;
+        font-weight: bold;
+    }
+    .second {
+        float:right;
+    }
+    .details {
+        text-align: right;
+        width:max-content;
+        display:inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .next dd{
+        margin-left:2px;
+        padding:0;
+        color:blue;
+    }
+    .set{
+        margin-left:2px;
+    }
+    .setcol
+    {
+        color:blue;
+    }
+   
+   .spanmargin{
+     width:150px;
+     display:inline-block;
+   }
+   .divmargin{
+    margin-top: 5px;
+   }
+   .check{
+    margin-left: 10px;
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://s3.ap-south-1.amazonaws.com/test.freezebooking.com/gsrtc.png" alt="GSRTC Ticket" />
+        <div class="incontainer">
+            <span id="first">Franchisee Reservation Voucher</span>
+            <span class="bold second">Franchisee Name: BUS INDIA</span>
+        </div>
+        <div style="clear: both;"></div> 
+        <div class="details bold">
+            <dl>
+                <dd>PNR Number:</dd>
+                <dd>Route No:</dd>
+                <dd>Journey From:</dd>
+                <dd>Trip Code:</dd>
+                <dd>Class:</dd>
+                <dd>Service From:</dd>
+                <dd>No. of Seats:</dd>
+            </dl>
+        </div>
+        <div class="details bold" style="text-align: left;">
+            <dl class="next">
+                <dd>1234</dd>
+                <dd>$route</dd>
+                <dd>$journey</dd>
+                <dd>$tripCode</dd>
+                <dd>$class</dd>
+                <dd>$serviceFrom</dd>
+                <dd>$noOfSeats</dd>
+            </dl>
+        </div>
+        <div class="details bold" >
+            <dl>
+                <dd></dd>
+                <dd>Journey Date:</dd>
+                <dd>Journey To:</dd>
+                <dd>Departure Time:</dd>
+                <dd>Pickup Point:</dd>
+                <dd>Service To:</dd>
+                <dd>Platform No.:</dd>
+            </dl>
+        </div>
+        <div class="details bold" style="text-align: left;">
+            <dl class="next">
+                <dd></dd>
+                <dd>$journeyDate</dd>
+                <dd>$journeyTo</dd>
+                <dd>$departureTime</dd>
+                <dd>$pickupPoint</dd>
+                <dd>$serviceTo</dd>
+                <dd>$platformNo</dd>
+            </dl>
+        </div><br/> 
+        <span class="bold set" >Seats No/s:<span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="setcol set">$seats</span>
+        <div class="set bold" style="margin-top: 10px;font-size: larger;" >Passenger Information</div>
+        <div class="divmargin bold set">
+        <div class="spanmargin">Name</div><div class="spanmargin">Age</div><div class="spanmargin">Adult/Child</div><div class="spanmargin">Gender</div>
+        </div>
+        <div class="bold set setcol" style="margin-top:10px">
+            <div class="spanmargin">$name</div><div class="spanmargin">$age</div><div class="spanmargin">$adultChild</div><div class="spanmargin">$gender</div>
+            </div><br/>
+        <div class="details set" style="width:fit-content;"><span>ID Card Type:</span><span class="check setcol">$aadharCard</span></div><div class="details" style="margin-left: 85px;width:fit-content"><span>ID Card Number:</span><span class="check setcol">$aadharCardNumber</span></div>
+        <div class="set bold" style="margin-top: 10px;font-size: larger;" >Total Fare Details</div>
+        <div class="details bold">
+            <dl>
+                <dd>Basic Fare:</dd>
+                <dd>Accidental Insurance Charges:</dd>
+                <dd>Toll Free Rajsthan:</dd>
+                <dd>Concessions:</dd>
+                <dd>GST:</dd>
+                <dd>GSRTC GST no:</dd>
+            </dl>
+        </div>
+        <div class="details bold" style="text-align: left;">
+            <dl class="next">
+                <dd>$basicFare</dd>
+                <dd>$accidental</dd>
+                <dd>$tollFreeRajsthan</dd>
+                <dd>$concessions</dd>
+                <dd>$gST</dd>
+                <dd>$gsrtcGstNo:</dd>
+            </dl>
+        </div>
+        <div class="details bold">
+            <dl>
+                <dd>Reservation Fee:</dd>
+                <dd>Toll Fee:</dd>
+                <dd>Other Levis:</dd>
+                <dd>Discounts:</dd>
+                <dd>Service Charge:</dd>
+            </dl>
+        </div>
+        <div class="details bold" style="text-align:left">
+            <dl class="next">
+                <dd>$reservationFee</dd>
+                <dd>$tollFee</dd>
+                <dd>$otherLevis</dd>
+                <dd>$discounts</dd>
+                <dd>$Servicecharge</dd>
+            </dl>
+        </div>
+        <div style="margin-left:280px;"><span class="setcol">Total Fare:</span>&nbsp;&nbsp;&nbsp;<span class="setcol">$fare</span></div>
+            <p>
+                Important
+            <ul style="list-style-type: disc;padding:20px;margin-top:-30px;font-size:small">
+                <li>The seat(s) booked under this e-ticket is/are not transferrable.</li>
+                <li>This e- ticket is valid only for the seat number and bus service specified here within.</li>
+                <li>This e- ticket is valid only for the seat number and bus service specified here within.</li>
+               <li> This e-ticket print out has to be carried by the passenger during the journey along with Original 
+Photo ID Card of the passenger whose name appears above.</li>
+<li>Please keep the e-ticket safely till the end of the journey.</li>
+<li>Please show the e-ticket at the time of checking.</li>
+<li>GSRTC reserves the rights to change/cancel the class of service.</li>
+<li>Cancellation policy differs for each STU. Please refer to the terms and conditions of the respective STUs.</li>
+<li>For any general queries, please contact following numbers 9513508001 and helpdesk@busindia.com</li>
+<li>Passengers will have to pay the difference amount at boarding time in case of fare/levies/taxes revision as and
+when applicable.The difference amount will be calculated on charged fare and new fare / new levy / revised tax.</li>
+<li>You can download busindia Android app from Google play store OR Windows app from Windows app store.</li>
+                </ul>
+                </p>
+    </div>
+</body>
+</html>
